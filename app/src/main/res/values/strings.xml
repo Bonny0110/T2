@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TallerNumero2</string>
+    <string name="btn_finalizar_compra">Finalizar Compra</string>
+    <string name="total_paga">Total a pagar:</string>
+    <string name="producto">Producto</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tacos">Tacos</string>
+    <string name="burrito">Burrito</string>
+    <string name="chilaquiles">Chilaquiles</string>
+    <string name="chilesnogada">ChilesNogada</string>
+    <string name="manchamantel">Manchamantel</string>
+    <string name="mole">Mole</string>
+    <string name="pozole">Pozole</string>
+    <string name="horchata">Horchata</string>
+    <string name="tequila">Tequila</string>
+    <string name="jamaica">Jamaica</string>
+    <string name="total">Total</string>
+    <string name="btn_factura">Generar Factura</string>
+    <string name="btn_compra">Realizar Compra</string>
+    <string name="btn_historial">Historial</string>
+</resources>

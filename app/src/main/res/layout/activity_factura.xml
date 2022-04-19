@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCDD2"
+    tools:context=".Factura">
+
+    <TableRow android:background="#FF5722"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/producto"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/cantidad"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_column="2"
+            android:padding="3dip"
+            android:text="@string/subtotal"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl1">
+
+        <TextView
+            android:id="@+id/producto1"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/tacos" />
+
+        <TextView
+            android:id="@+id/cantidad1"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal1"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl2">
+
+        <TextView
+            android:id="@+id/producto2"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/burrito" />
+
+        <TextView
+            android:id="@+id/cantidad2"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal2"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl3">
+
+        <TextView
+            android:id="@+id/producto3"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/chilaquiles" />
+
+        <TextView
+            android:id="@+id/cantidad3"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal3"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl4">
+
+        <TextView
+            android:id="@+id/producto4"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/chilesnogada" />
+
+        <TextView
+            android:id="@+id/cantidad4"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal4"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl5">
+
+        <TextView
+            android:id="@+id/producto5"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/manchamantel" />
+
+        <TextView
+            android:id="@+id/cantidad5"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal5"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl6">
+
+        <TextView
+            android:id="@+id/producto6"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/mole" />
+
+        <TextView
+            android:id="@+id/cantidad6"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal6"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl7">
+
+        <TextView
+            android:id="@+id/producto7"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/pozole" />
+
+        <TextView
+            android:id="@+id/cantidad7"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal7"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl8">
+
+        <TextView
+            android:id="@+id/producto8"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/horchata" />
+
+        <TextView
+            android:id="@+id/cantidad8"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal8"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl9">
+
+        <TextView
+            android:id="@+id/producto9"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/tequila" />
+
+        <TextView
+            android:id="@+id/cantidad9"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal9"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tbl10">
+
+        <TextView
+            android:id="@+id/producto10"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/jamaica" />
+
+        <TextView
+            android:id="@+id/cantidad10"
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/subtotal10"
+            android:layout_column="2"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="@string/total_paga"
+            android:textColor="#E91E63"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="$43,4" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnFinalizarCompra"
+        android:background="@drawable/btn_bg_design"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_finalizar_compra" />
+
+    <ImageView
+        android:background="@drawable/carrito"
+        android:layout_width="match_parent"
+        android:layout_height="265dp">
+
+    </ImageView>
+
+</TableLayout>

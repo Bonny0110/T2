@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCDD2"
+    tools:context=".Comidas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:stretchColumns="1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TableRow android:background="#FF5722">
+
+                <TextView
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="@string/producto"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="@string/cantidad"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="@string/subtotal"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/tacos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="tacos"
+                    android:text="@string/tacos"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="121dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs1"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.00" />
+            </TableRow>
+
+            <TableRow android:layout_height="32dp">
+
+                <Button
+                    android:id="@+id/burrito"
+                    android:layout_width="151dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="burrito"
+                    android:text="@string/burrito"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs2"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.30" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/chilaquiles"
+                    android:layout_width="151dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="chilaquilas"
+                    android:text="@string/chilaquiles"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="169dp" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.50" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/chilesnogada"
+                    android:layout_width="149dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="chilesnogada"
+                    android:text="@string/chilesnogada"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="261dp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.40" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/manchamant"
+                    android:layout_width="149dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="manchamantel"
+                    android:text="@string/manchamantel"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="312dp" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.50" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/mole"
+                    android:layout_width="147dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="mole"
+                    android:text="@string/mole"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="362dp" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.40" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/pozole"
+                    android:layout_width="149dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="pozole"
+                    android:text="@string/pozole"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="410dp" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2.30" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/horchata"
+                    android:layout_width="149dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="horchata"
+                    android:text="@string/horchata"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="458dp" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1.50" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/tequila"
+                    android:layout_width="149dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="tequila"
+                    android:text="@string/tequila"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="505dp" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1.40" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/jamaica"
+                    android:layout_width="150dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_bg_design"
+                    android:onClick="jamaica"
+                    android:text="@string/jamaica"
+                    android:textAllCaps="false"
+                    tools:layout_editor_absoluteX="59dp"
+                    tools:layout_editor_absoluteY="554dp" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvs10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1.50" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="@string/total"
+                    android:textColor="#FF5722" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="left"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <Button
+                android:id="@+id/mbtnFactura"
+                android:background="@drawable/btn_bg_design"
+                android:text="@string/btn_factura"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintVertical_bias="0.918" />
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
